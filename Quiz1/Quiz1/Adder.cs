@@ -1,5 +1,8 @@
 ﻿namespace Quiz1
 {
+    /// <summary>
+    /// 3 overloads this is static polymorphism
+    /// </summary>
     public static class Adder
     {
         public static double Add(double x, double y)
