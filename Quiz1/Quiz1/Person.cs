@@ -35,8 +35,9 @@ namespace Quiz1
     /// <summary>
     /// Teacher "is-a" Person
     /// Teacher "has-a" list of Students
+    /// Teacher is sealed so it cannot be a base class
     /// </summary>
-    public class Teacher : Person
+    public sealed class Teacher : Person
     {
         private readonly List<Person> _students;
 
