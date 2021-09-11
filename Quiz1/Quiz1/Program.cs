@@ -14,10 +14,16 @@ namespace Quiz1
 
             students.Remove(student1);
 
-            Console.WriteLine(new Person());
-            Console.WriteLine(new Person("Mary", "Jane"));
+            Console.WriteLine(new Person()); // 4 John Doe
+            Console.WriteLine(new Person("Mary", "Jane")); // 5 Mary Jane
 
-            Console.WriteLine(new Teacher(students, "Sam", "Wise"));
+            var teacher = new Teacher(students, "Sam", "Wise");
+
+            Console.WriteLine(teacher); // 6 Sam Wise has 2 students
+
+            students.Clear();
+
+            Console.WriteLine(teacher); // 6 Sam Wise has 0 students
 
             // Console.WriteLine(Adder.Add(2.0, 3.1));
             // Console.WriteLine(Adder.Add("Hello ", "World"));
