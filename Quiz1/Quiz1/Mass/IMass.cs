@@ -1,7 +1,7 @@
 ﻿namespace Quiz1.Mass
 {
     /// <summary>
-    /// We’re using an interface instead of an abstract class since many otherwise unrelated things have mass. (planets, butterflies, etc)
+    /// We’re using an interface instead of an abstract class since many otherwise unrelated things have mass.
     /// </summary>
     public interface IMass
     {
