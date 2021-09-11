@@ -51,4 +51,12 @@ namespace Quiz1
             return $"{base.ToString()} has {_students.Count()} students";
         }
     }
+
+    /// <summary>
+    /// Will not compile because Teacher is sealed
+    /// </summary>
+    // public class TeacherAssistant : Teacher
+    // {
+    //     //TODO: implementation
+    // }
 }
