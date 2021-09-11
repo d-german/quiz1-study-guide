@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Quiz1.Mass;
 
 namespace Quiz1
 {
@@ -28,6 +29,9 @@ namespace Quiz1
             // Console.WriteLine(Adder.Add(2.0, 3.1));
             // Console.WriteLine(Adder.Add("Hello ", "World"));
             // Console.WriteLine(Adder.Add(2, 3));
+
+            var universe = new MassController(new IMass[] { new PlanetEarth(), new Butterfly() });
+            Console.WriteLine($"The mass of our universe is {universe.UniversalMass()}");
         }
     }
 }
