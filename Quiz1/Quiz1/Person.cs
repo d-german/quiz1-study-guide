@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
-using System.Diagnostics.Tracing;
+using System.Linq;
 
 namespace Quiz1
 {
@@ -39,16 +39,16 @@ namespace Quiz1
     /// </summary>
     public sealed class Teacher : Person
     {
-        private readonly List<Person> _students;
+        private readonly IEnumerable<Person> _students;
 
-        public Teacher(List<Person> students, string firstname, string lastname) : base(firstname, lastname)
+        public Teacher(IEnumerable<Person> students, string firstname, string lastname) : base(firstname, lastname)
         {
             _students = students;
         }
 
         public override string ToString()
         {
-            return $"{base.ToString()} has {_students.Count} students";
+            return $"{base.ToString()} has {_students.Count()} students";
         }
     }
 }
